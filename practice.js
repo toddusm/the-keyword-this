@@ -89,8 +89,8 @@ var getUsername = function(){
 };
 
 
-
-setTimeout(getUsername.call(user, 5000));
+var getTheUsername = getUsername.bind(user);
+setTimeout(getTheUserName, 5000);
 //Above you're given an object, a function, and a setTimeout invocation. After 5 seconds, what will the getUsername function return?
 
   //Answer Here
