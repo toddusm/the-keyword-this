@@ -6,7 +6,7 @@ acts as a place holder
   // 2) What are the four rules that govern what the 'this keyword' is bound to and describe each?
 
       //Answer
-call(give a input and returns the answer), apply(is used with arrays to call the function), bind(bind creates a new function), nuculear 
+call(give a input and returns the answer), apply(is used with arrays to call the function), bind(bind creates a new function), nuculear  or new, default, implicet and expliect
   // 3) What is the difference between call and apply?
 
       //Answer
@@ -72,8 +72,8 @@ var getYear = function(){
 //Above you're given the getYear function. Using your prius and mustang objects from above, use the proper syntax that will allow for you to call the getYear function with the prius then the mustang objects being the focal objects. *Don't add getYear as a property on both objects*.
 
   //Code Here
-prius = getYear.call(prius);
-mustang = getYear.call(mustang);
+getYear.call(prius);
+getYear.call(mustang);
 //New Problem
 
 
@@ -94,7 +94,7 @@ setTimeout(getTheUserName, 5000);
 //Above you're given an object, a function, and a setTimeout invocation. After 5 seconds, what will the getUsername function return?
 
   //Answer Here
-nothing because it does not have access to var user.
+the window this since it does not yet have accces to the this for the username.
 //In the example above, what is the 'this keyword' bound to when getUsername runs?
 
   //Answer Here
